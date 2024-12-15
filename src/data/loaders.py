@@ -1,7 +1,8 @@
 import pandas as pd
 import warnings
+import os
 def cargar_datos_csv(ruta_csv: str):
-  ruta_csv = r"D:\DATA_ANALIZAR.csv"
+  ruta_csv = os.path.join('data_file',"D:\DATA_ANALIZAR.csv")
   try:
    with warnings.catch_warnings():
      warnings.simplefilter("ignore")
@@ -16,6 +17,6 @@ def cargar_datos_csv(ruta_csv: str):
  
 
 
-data = cargar_datos_csv("D:\\DATA_ANALIZAR.csv")
+data = cargar_datos_csv("data_file/DATA_ANALIZAR.csv")
 print(data.head(10))
 

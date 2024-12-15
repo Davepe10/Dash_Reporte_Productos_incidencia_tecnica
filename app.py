@@ -16,7 +16,7 @@ import seaborn as sns
 sns.set(style="whitegrid")
 
 # Ruta del archivo de datos
-RUTA_ARCHIVO = "D:\\DATA_ANALIZAR.csv"
+RUTA_ARCHIVO = "data_file/DATA_ANALIZAR.csv"
 
 # Cargar y limpiar los datos
 data = preparar_datos(RUTA_ARCHIVO)

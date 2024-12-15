@@ -2,7 +2,7 @@ import pandas as pd
 from src.data.cleaners import preparar_datos
 
 # Cargar y limpiar los datos
-data_limpia = preparar_datos("D:\\DATA_ANALIZAR.csv")
+data_limpia = preparar_datos("data_file/DATA_ANALIZAR.csv")
 
 
 # Función para obtener el mes con mayor ingreso a técnico

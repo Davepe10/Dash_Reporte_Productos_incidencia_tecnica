@@ -40,7 +40,7 @@ def limpiar_nombres(dataset: pd.DataFrame, columna: str) -> pd.DataFrame:
 
 def preparar_datos(dataset: str) -> pd.DataFrame:
     # Cargar los datos
-    dataset = cargar_datos_csv("D:\\DATA_ANALIZAR.csv")
+    dataset = cargar_datos_csv("data_file/DATA_ANALIZAR.csv")
     # Limpiar los datos paso por paso
     dataset = eliminar_columnas_irrelevantes(dataset)
     dataset = crear_id(dataset)
@@ -51,7 +51,7 @@ def preparar_datos(dataset: str) -> pd.DataFrame:
     return dataset
 
 
-ruta_archivo = "D:\\DATA_ANALIZAR.csv"
+ruta_archivo = "data_file/DATA_ANALIZAR.csv"
 dataset = preparar_datos(ruta_archivo)
 
 # Verificar si el dataset fue procesado
@@ -59,5 +59,5 @@ if dataset is not None:
     print("Primeras 5 filas del dataset limpio:")
     print(dataset.head(5))
     # Guardar los datos limpios para corroborar
-    dataset.to_csv("D:\\DATA_LIMPIO.csv", index=False)
+    dataset.to_csv("data_file/DATA_ANALIZAR.csv", index=False)
     print("Archivo limpio guardado como 'DATA_LIMPIO.csv'.")
