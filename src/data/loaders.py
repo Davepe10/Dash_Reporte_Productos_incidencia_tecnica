@@ -17,6 +17,4 @@ def cargar_datos_csv(ruta_csv: str):
  
 
 
-data = cargar_datos_csv("data_file/DATA_ANALIZAR.csv")
-print(data.head(10))
 

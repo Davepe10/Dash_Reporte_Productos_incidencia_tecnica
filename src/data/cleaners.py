@@ -1,4 +1,4 @@
-# src/data/cleaners.py
+
 import pandas as pd
 from src.data.loaders import cargar_datos_csv
 from rapidfuzz import process, fuzz
@@ -50,7 +50,7 @@ def preparar_datos(dataset: str) -> pd.DataFrame:
     
     return dataset
 
-
+'''
 ruta_archivo = "data_file/DATA_ANALIZAR.csv"
 dataset = preparar_datos(ruta_archivo)
 
@@ -61,3 +61,4 @@ if dataset is not None:
     # Guardar los datos limpios para corroborar
     dataset.to_csv("data_file/DATA_ANALIZAR.csv", index=False)
     print("Archivo limpio guardado como 'DATA_LIMPIO.csv'.")
+'''
